@@ -37,7 +37,7 @@ $(document).ready(function() {
   var slides = document.querySelectorAll("#partners_slider .slide");
   console.log(slides);
   var currentSlide = 0;
-  var slideInterval = setInterval(nextSlide, 3000);
+  var slideInterval = setInterval(nextSlide, 7000);
   // var next = document.getElementById('next');
   // var previous = document.getElementById('previous');
   
@@ -72,6 +72,14 @@ $(document).ready(function() {
 
   function nextSlide() {
     goToSlide(currentSlide + 1);
+
+    if($(".slide_1").hasClass("active")) {
+      $(".slide_2").addClass("active");
+      $(".slide_1").removeClass("active");
+    } else {
+      $(".slide_1").addClass("active");
+      $(".slide_2").removeClass("active");
+    }
   }
 
   function previousSlide() {

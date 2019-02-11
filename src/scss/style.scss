@@ -607,19 +607,28 @@ section {
     height: 18px;
     border: 1px solid #dcdcdc;
 
-    .inner__div {
+    & .inner__div {
       background-color: #dcdcdc;
       border-radius: 50px;
       width: 12px;
       height: 12px;
     }
 
-    .active .inner__div {
+    &.active .inner__div {
       background-image: linear-gradient(to top, #0365ff 0%, #5aa5ff 100%);
     }
 
     &.slide_1 {
       margin-right: 5px;
     }
+  }
+  
+  .slide_act_wrapper {
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 42px;
+    height: 18px;
   }
 }

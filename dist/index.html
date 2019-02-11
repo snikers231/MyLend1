@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="main__wrapper section_wrapper">
+        <!-- header -->
+        <header class="header">
+          <div class="header__first_line">
+            <!-- logo -->
+            <div class="logo">
+              <div class="logo_svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="52"
+                  height="94"
+                  viewBox="0 0 52 94"
+                >
+                  <g>
+                    <g transform="translate(-309 -26)">
+                      <image
+                        width="52"
+                        height="94"
+                        transform="translate(309 26)"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p class="logo_basement_year">
+                Основан <br />
+                в 2000 году
+              </p>
+            </div>
+            <!-- address -->
+            <div class="header__to_right">
+              <div class="header__address">
+                <p class="address__text">
+                  г. Москва, БЦ Лотос, <br />
+                  ул. Одесская, дом 2, к С
+                </p>
+              </div>
+              <!-- call me -->
+              <div class="header__call_me">
+                <span class="call_me__number">
+                  +7 (495) 230-27-01
+                </span>
+                <a href="" class="call_me__button button">
+                  Заказать звонок
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__second_line">
+            <!-- menu -->
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Купить</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Продать</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Ипотека</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Юридическая экспертиза</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Оценка</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Новостройки</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Выкуп</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Аренда</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <!-- main header -->
+        <div class="main__headers">
+          <h1 class="h1 main__h1">
+            Многофункциональный городской<br />
+            Центр недвижимости
+          </h1>
+          <h1 class="h1 h1__bigger">
+            « МГЦН »
+          </h1>
+        </div>
+
+        <!-- consult -->
+        <div class="main__consult">
+          <!-- left block -->
+          <div class="consult__blue_block">
+            <div class="blue_block__wrapper">
+              <h3 class="h3 blue_block__h3">
+                Получите бесплатную консультацию
+              </h3>
+              <ul class="consult__list">
+                <li class="consult__list_item">
+                  <span class="consult_list__number>">01.</span> Помощь в получении ипотеки на льготных условиях
+                </li>
+                <li class="consult__list_item">
+                  <span class="consult_list__number>">02.</span> Купля-продажа вторичной недвижимости
+                </li>
+                <li class="consult__list_item">
+                  <span class="consult_list__number>">03.</span> Покупка новостройки без комиссии со скидками
+                </li>
+                <li class="consult__list_item">
+                  <span class="consult_list__number>">04.</span> Юридическое сопровождение сделки
+                </li>
+                <li class="consult__list_item">
+                  <span class="consult_list__number>">05.</span> Срочный выкуп недвижимости
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- right block -->
+          <div class="consult__white_block">
+            <div class="white_block__wrapper">
+              <div class="consult__girl"></div>
+              <h4 class="h4 white_block__h4">
+                <span class="white_block__bold">Оставьте ваш номер телефона</span><br />
+                и мы вам перезвоним
+              </h4>
+              <form action="mail.php" method="post">
+                <input type="text" placeholder="Александр Владимирович" name="name" id="form-name" />
+                <input type="text" placeholder="+7 (999) 999-99-99" name="phone" id="form-phone" />
+                <input type="button" value="ПЕРЕЗВОНИТЕ МНЕ" />
+                <div class="button_icon"></div>
+              </form>
+              <div class="consult__privacy_term">
+                <div class="privacy__btn"></div>
+                <span class="privacy_term">
+                  Я соглашаюсь с условиями в
+                  <a href="#" class="privacy_link">политике конфиденциальности</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__wrapper  section_wrapper">
+        <h2 class="h2 services__h2">
+          Услуги от «МГЦН» без предоплат
+        </h2>
+        <!-- tabs will be here -->
+        <div class="services__tabs">
+          <ul class="tabs">
+            <li><a href="#services__credit">Ипотечное кредитование</a></li>
+            <li><a href="#services__buy">Купить недвижимость</a></li>
+            <li><a href="#services__sell">Продать недвижимость</a></li>
+
+            <li><a href="#services__jur">Юридическая экспертиза</a></li>
+            <li><a href="#services__mark">Оценка недвижимости</a></li>
+            <li><a href="#services__obj">Покупка объекта в новостройке</a></li>
+            <li><a href="#services__vikup">Выкуп недвижимости</a></li>
+            <li><a href="#services__arenda">Аренда</a></li>
+          </ul>
+
+          <div id="services__credit" class="tab_content">
+            <h2>Gallery</h2>
+          </div>
+          <div id="services__buy" class="tab_content">
+            <h2>Submit</h2>
+          </div>
+          <div id="services__sell" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+          <div id="services__jur" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+          <div id="services__mark" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+          <div id="services__obj" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+          <div id="services__vikup" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+          <div id="services__arenda" class="tab_content">
+            <h2>Resources</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partnership -->
+    <section class="partnership">
+      <div class="parthership__wrapper section_wrapper">
+        <div class="partnership__next_button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="8"
+            height="12"
+            viewBox="0 0 8 12"
+          >
+            <defs>
+              <path
+                id="q45da"
+                d="M959.19 2797h1.63v8.896l2.045-2.046 1.145 1.147-2.864 2.866-1.146 1.146-4.01-4.012 1.146-1.147 2.054 2.055z"
+              />
+            </defs>
+            <g>
+              <g transform="translate(-956 -2797)">
+                <use fill="#fff" xlink:href="#q45da" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <h2 class="h2 partnership__h2">
+          Cотрудничество с «МГЦН»
+        </h2>
+
+        <div class="partnership__content_wrapper">
+          <!-- left_block -->
+          <div class="partnership__left_block">
+            <div class="left_block__content">
+              <h3 class="h3 left_block__h3">
+                Карьера с нами
+              </h3>
+              <p class="partnership__text">
+                Приглашаем опытных и амбициозных сотрудников! Мы – современное и динамично развивающееся агентство
+                недвижимости, открывающее широкие возможности карьерного и личностного роста. Добро пожаловать в команду
+                профессионалов!
+              </p>
+            </div>
+
+            <div class="partnership__diagram"></div>
+            <div class="partnership__left_block_link_block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+              >
+                <defs>
+                  <path
+                    id="ibraa"
+                    d="M650 3332v-2h10.404l-2.412-2.581 1.338-1.433 3.344 3.58 1.337 1.433-4.681 5.012-1.338-1.432 2.409-2.579z"
+                  />
+                </defs>
+                <g>
+                  <g transform="translate(-650 -3326)">
+                    <use fill="#fff" xlink:href="#ibraa" />
+                  </g>
+                </g>
+              </svg>
+              <!-- tooltip should be there -->
+              <a href="#" class="partnership__more_link">Подробнее</a>
+            </div>
+          </div>
+
+          <!-- right_block -->
+          <div class="partnership__right_block">
+            <h3 class="h3 right_block__h3">Партнерство с нами</h3>
+            <h4 class="h4 right_block__h4">
+              Приглашаем к сотрудничеству:
+            </h4>
+            <ul class="partnership__list">
+              <li class="partnership__list_item">Застройщиков</li>
+              <li class="partnership__list_item">Банки и кредитные организации</li>
+              <li class="partnership__list_item">
+                Региональные агентства недвижимости
+              </li>
+              <li class="partnership__list_item">Адвокатов</li>
+              <li class="partnership__list_item">Инвесторов</li>
+              <li class="partnership__list_item">
+                Всех, кто является таким же убежденным сторонником становления цивилизованного и безопасного рынка
+                недвижимости в России, как и мы.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="section_wrapper">
+        <h2 class="h2">
+          Действующие партнеры
+        </h2>
+
+        <div class="partners_slider">
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+          <div class="partners_slider_item">123</div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <h2 class="h2">
+        О компании «МГЦН»
+      </h2>
+      <!-- carousel shold be there -->
+    </section>
+    <footer class="footer">
+      <div class="contacts">
+        <h2 class="h2">
+          Контакты
+        </h2>
+
+        <ul class="contacts__list">
+          <li class="contacts__list_item">
+            г. Москва, БЦ Лотос, ул. Одесская, дом 2, к С
+          </li>
+          <li class="contacts__list_item">График работы: Пн-Сб 09:00-23:00</li>
+          <li class="contacts__list_item">info@mgcngroup.ru</li>
+          <li class="contacts__list_item">
+            <span class="contacts__phone">+7 (495) 230-27-01</span>
+          </li>
+        </ul>
+        <div class="contacts_bottom-line">
+          <a href="#" class="privacy_link">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </div>
+      <div class="map">
+        <span class="map"></span>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

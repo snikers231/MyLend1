@@ -623,3 +623,136 @@ section {
     }
   }
 }
+
+.about {
+  .carousel_area {
+    width: 100%;
+    height: 605px;
+    display: flex;
+    box-shadow: -1px 9px 18px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: 48px;
+    padding: 10px 19px 20px 18px;
+  }
+
+  .carousel_buttons {
+    width: 120px;
+    height: 53px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 12px;
+    margin-right: 6px;
+
+    img {
+      margin-top: 7px;
+      margin-right: 2px;
+    }
+
+    button {
+      outline: none;
+      width: 53px;
+      height: 53px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border: 1px solid #4292ff;
+      background-color: #69aafc;
+      background-image: linear-gradient(45deg, #0365ff 0%, #5aa5ff 100%);
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-right: 7px;
+      opacity: 0.7;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .carousel_info {
+    width: 42%;
+    height: 97%;
+    margin-left: 19px;
+    padding-top: 16px;
+  }
+
+  .carousel_info_back {
+    width: 100%;
+    height: 100%;
+    box-shadow: -1px 9px 46px rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    background: url("../img/carousel/2-layers.png") no-repeat center ;
+    opacity: 0.95;
+  }
+
+  .carousel_info_header {
+    width: 100%;
+    height: 111px;
+  }
+
+  .carousel_info_main {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 0 40px;
+  }
+
+  .carousel_info_header {
+    display: flex;
+
+    span {
+      margin-left: 38px;
+      width: 300px;
+      height: 111px;
+      color: #ffffff;
+      font-family: Gilroy;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.77px;
+    }
+  }
+
+  .carousel_info_body {
+    margin-top: 20px;
+    padding-right: 83px;
+    color: #ffffff;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.09px;
+
+    div {
+      margin-top: 20px;
+    }
+  }
+
+  .carousel-list {    
+      list-style: none;
+      width: 10000px;
+      left: -39px;
+      position: relative;
+  }
+  
+  .carousel-element {
+      display: block;
+      margin-right: 25px;
+      float: left;
+  }
+  
+  .carousel-element img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .carousel-hider {
+    width: 55%;
+    overflow: hidden;
+    position: relative;
+  }
+}

@@ -134,4 +134,60 @@ $(document).ready(function() {
   //     playSlideshow();
   //   }
   // };
+
+  resizeWindow();
+
+  $(window).on('resize', function(){
+    resizeWindow();
+  });
+
+  var leftUIEl = $('.carousel-arrow-left');
+  var rightUIEl = $('.carousel-arrow-right');
+  var elementsList = $('.carousel-list');
+  var carouselHider = $('.carousel-hider');
+
+  var currentLeftValue = -37;
+  
+  leftUIEl.click(function() {
+    console.log (-currentLeftValue + " " + carouselHider.width());
+    if (-currentLeftValue < carouselHider.width()) {
+      currentLeftValue -= carouselHider.width() + 32;
+    }
+    else {
+      currentLeftValue += carouselHider.width() + 32;
+    }
+    elementsList.animate({ left : currentLeftValue + "px"}, 500);
+  });
+
+  rightUIEl.click(function() {
+    if (-currentLeftValue > carouselHider.width()) {
+      currentLeftValue = -37;
+    }
+    else {
+      currentLeftValue -= carouselHider.width() + 32;
+    }
+    elementsList.animate({ left : currentLeftValue + "px"}, 500);
+  });
+
+
+  // var width = document.getElementsByClassName("carousel")[0].offsetWidth;
+  // var carousel = document.getElementById('carousel'); 
+  // var list = document.getElementsByClassName("images")[0];
+
+  // document.getElementById("left_button").onclick = function() {
+  //   list.style.marginLeft = -600 + 'px';
+  // };
+
 });
+
+function resizeWindow() {
+  var carouselArea = $('.carousel_area');
+  var carouselHider = $('.carousel-hider');
+  console.log(carouselHider.width());
+  var carouselElem = $('.carousel-element');
+
+  carouselElem[0].style.width = carouselHider.width() + "px";
+  carouselElem[1].style.width = carouselHider.width() + "px";
+
+  carouselArea[0].style.height = (carouselElem[0].offsetHeight + 10) + "px";
+}

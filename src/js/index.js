@@ -1,4 +1,16 @@
 import $ from "jquery";
+import MicroModal from 'micromodal';  // es6 module
+
+$(document).ready(function() {
+  MicroModal.init();
+
+  // MicroModal.show("main_popup");
+
+});
+
+$(".open_form").click(function() {
+  MicroModal.show("main_popup");
+});
 
 $(document).ready(function() {
   //Default Action
@@ -21,18 +33,6 @@ $(document).ready(function() {
   });
 });
 
-function openTab(tab) {
-  $("ul.tabs li").removeClass("active"); //Remove any "active" class
-  $(tab).addClass("active"); //Add "active" class to selected tab
-  $(".tab_content").hide(); //Hide all tab content
-  var activeTab = $(tab)
-    .find("a")
-    .attr("href"); //Find the rel attribute value to identify the active tab + content
-  $(activeTab).fadeIn(); //Fade in the active content
-
-  // ToDo: anchor
-}
-
 $(document).ready(function() {
   var slides = document.querySelectorAll("#partners_slider .slide");
   console.log(slides);
@@ -50,6 +50,10 @@ $(document).ready(function() {
   //  pauseSlideshow();
   //  previousSlide();
   // };
+  // function openTab(tab) {
+  //   
+  // }
+
   $(".slide_1").click(function() {
     slideOne();
     $(".slide_1").addClass("active");
@@ -81,6 +85,23 @@ $(document).ready(function() {
       $(".slide_2").removeClass("active");
     }
   }
+
+  $('.menu a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+
+    var selector = "#services__" + $(this).attr("id");
+    var hrefSelector = ".services__tabs a[href*=\"" + selector + "\"]";
+    
+    console.log(hrefSelector.toString());
+    console.log(selector.toString());
+
+    $(".services__tabs ul.tabs li").removeClass("active"); //Remove any "active" class
+    $($(hrefSelector).closest("li")).addClass("active"); //Add "active" class to selected tab
+    $(".tab_content").hide(); //Hide all tab content
+    $(selector).fadeIn(); //Fade in the active content
+  }); 
 
   function previousSlide() {
     goToSlide(currentSlide - 1);

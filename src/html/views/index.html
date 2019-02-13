@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
 
-    <title>Document</title>
+    <title>«МГЦН» Многофункциональный Городской Центр Недвижимости</title>
   </head>
   <body>
     <section class="main">
@@ -53,7 +53,7 @@
                 <span class="call_me__number">
                   +7 (495) 230-27-01
                 </span>
-                <a href="" class="call_me__button button">
+                <a href="#" class="call_me__button button open_form">
                   Заказать звонок
                 </a>
               </div>
@@ -65,28 +65,28 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="" class="menu__link">Купить</a>
+                  <a href="#services__tabs_id" class="menu__link" id="buy">Купить</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Продать</a>
+                  <a href="#services__tabs_id" class="menu__link" id="sell">Продать</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Ипотека</a>
+                  <a href="#services__tabs_id" class="menu__link" id="credit">Ипотека</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Юридическая экспертиза</a>
+                  <a href="#services__tabs_id" class="menu__link" id="jur">Юридическая экспертиза</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Оценка</a>
+                  <a href="#services__tabs_id" class="menu__link" id="mark">Оценка</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Новостройки</a>
+                  <a href="#services__tabs_id" class="menu__link" id="obj">Новостройки</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Выкуп</a>
+                  <a href="#services__tabs_id" class="menu__link" id="vikup">Выкуп</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Аренда</a>
+                  <a href="#services__tabs_id" class="menu__link" id="arenda">Аренда</a>
                 </li>
               </ul>
             </nav>
@@ -181,13 +181,11 @@
         <h2 class="h2 services__h2">
           Услуги от «МГЦН» без предоплат
         </h2>
-        <!-- tabs will be here -->
-        <div class="services__tabs">
+        <div class="services__tabs" id="services__tabs_id">
           <ul class="tabs">
             <li><a href="#services__credit">Ипотечное кредитование</a></li>
             <li><a href="#services__buy">Купить недвижимость</a></li>
             <li><a href="#services__sell">Продать недвижимость</a></li>
-
             <li><a href="#services__jur">Юридическая экспертиза</a></li>
             <li><a href="#services__mark">Оценка недвижимости</a></li>
             <li><a href="#services__obj">Покупка объекта в новостройке</a></li>
@@ -702,7 +700,7 @@
             </li>
           </ul>
           <div class="contacts_button_wrapper">
-            <a href="#" class="contacts_button">
+            <a href="#" class="contacts_button open_form">
               Заказать звонок
             </a>
             <div class="button_icon"></div>
@@ -727,6 +725,592 @@
         ></iframe>
       </div>
     </footer>
+
+    <div class="modal micromodal-slide" id="popup_1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Покупка недвижимости
+            </h2>
+            <div
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></div>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <div class="modal_wrapper">
+              <div class="modal_main_block">
+                <div class="photo_block">
+                  <div class="blue_block"></div>
+                  <div class="photo_card">
+                    <div class="photo_card_content">
+                      <img src="../../img/photo.png" alt="Фото" />
+
+                      <span class="name">
+                        Владислав <br />
+                        Жильцов
+                      </span>
+                      <span class="job">
+                        Старший специалист
+                      </span>
+                    </div>
+                    <div class="blue_line"></div>
+                  </div>
+                </div>
+                <div class="text_block">
+                  <p class="text">
+                    Покупка квартиры – это всегда очень ответственный и
+                    непростой процесс, состоящий из множества сложных этапов.
+                    Непрофессиональный подход в лучшем случае чреват большими
+                    убытками. Рынок недвижимости Московского региона по сей день
+                    является самым дорогим и непрозрачным в части процессуальных
+                    моментов и государственного регулирования. В нашей компании
+                    работают только аттестованные риелторы с большим опытом
+                    работы. Мы гарантируем своим клиентам юридическую чистоту и
+                    безопасность на всех этапах сделки.
+                  </p>
+                  <div class="button_wrapper">
+                    <a href="#" class="button">
+                      Задать вопрос эксперту
+                    </a>
+                    <div class="button_icon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_number_block">
+                <ul class="number__list">
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_1"></div>
+                    <div class="number_text">
+                      Проведение сделок любой сложности: залоговые сделки,
+                      купля-продажа, ипотека, мена, разъезд, сделки с
+                      материнским капиталом, сертификатами и субсидиями.
+                    </div>
+                  </li>
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_2"></div>
+                    <div class="number_text">
+                      Подбор лучшего предложения в любом районе Москвы и
+                      области, с учётом ваших предпочтений.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal_advantages_block">
+                <h4 class="modal_h4">
+                  Распространенные риски при оформлении сделок
+                </h4>
+                <div class="adv_blocks adv_cross">
+                  <div class="adv_block">
+                    <span>Недееспособные собственники</span>
+                  </div>
+                  <div class="adv_block"><span>Аресты обременения</span></div>
+                  <div class="adv_block">
+                    <span>Отказники по приватизации</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Обделённые долей несовершеннолетние</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Потенциальные наследники</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Несоответствия в документах</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Занижение цены в договоре</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Незаконная перепланировка</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_questions_block">
+                <div class="questions_text">
+                  <span class="big_blue">
+                    Есть сложности?
+                  </span>
+                  <span class="little_white">
+                    Оставьте свой номер <br />
+                    и мы перезвоним
+                  </span>
+                </div>
+                <div class="form_wrapper">
+                  <form action="mail.php" method="post">
+                    <input
+                      type="text"
+                      placeholder="+7 (999) 999-99-99"
+                      name="phone"
+                      id="form-phone"
+                    />
+                    <input type="button" value="ПЕРЕЗВОНИТЕ МНЕ" />
+                    <div class="button_icon"></div>
+                  </form>
+                  <div class="consult__privacy_term">
+                    <div class="privacy__btn"></div>
+                    <span class="privacy_term">
+                      Я соглашаюсь с условиями в
+                      <a href="#" class="privacy_link"
+                        >политике конфиденциальности</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_withus">
+                <h4 class="modal_h4">
+                  Распространенные риски при оформлении сделок
+                </h4>
+                <div class="withus_wrapper">
+                  <div class="block">
+                    <span>
+                      Гарантия <br />
+                      юридической <br />
+                      чистоты
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Безопасность <br />
+                      взаиморасчётов
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Взаимодействие <br />
+                      с регистрирующими <br />
+                      органами <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="modal__footer"></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="popup_2" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Покупка недвижимости
+            </h2>
+            <div
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></div>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <div class="modal_wrapper">
+              <div class="modal_main_block">
+                <div class="photo_block">
+                  <div class="blue_block"></div>
+                  <div class="photo_card">
+                    <div class="photo_card_content">
+                      <img src="../../img/photo.png" alt="Фото" />
+
+                      <span class="name">
+                        Владислав <br />
+                        Жильцов
+                      </span>
+                      <span class="job">
+                        Старший специалист
+                      </span>
+                    </div>
+                    <div class="blue_line"></div>
+                  </div>
+                </div>
+                <div class="text_block">
+                  <p class="text">
+                    На сегодняшний день ипотека является самым удобным
+                    инструментом, позволяющим приобрести недвижимость. Несмотря
+                    на это, процесс одобрения ипотеки порой таит в себе
+                    множество сложностей и нюансов, не зная которых, потребитель
+                    рискует потерять большое количество времени и денег. Наша
+                    задача - одобрить для вас ипотечный кредит на максимально
+                    выгодных условиях и защитить ваши интересы. Услуга по
+                    одобрению ипотеки от МГЦН предполагает индивидуальный
+                    подход. Благодаря большому опыту работы и обширной
+                    партнёрской программе с банками мы гарантируем оптимальные
+                    сроки одобрения ипотеки.
+                  </p>
+                  <div class="button_wrapper">
+                    <a href="#" class="button">
+                      Задать вопрос эксперту
+                    </a>
+                    <div class="button_icon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_number_block">
+                <ul class="number__list">
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_1"></div>
+                    <div class="number_text">
+                      Обратившись к нам вы получите одобрение ипотеки не отходя
+                      от компьютера. Достаточно отправить все необходимые
+                      документы нашему специалисту в электронном виде.
+                    </div>
+                  </li>
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_2"></div>
+                    <div class="number_text">
+                      Наша компания является официальным партнером более
+                      двадцати банков, благодаря чему мы получаем скидки для
+                      наших клиентов. В среднем экономия составляет от 700.000
+                      рублей с дистанцией на пятнадцать лет.
+                    </div>
+                  </li>
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_3"></div>
+                    <div class="number_text">
+                      Высокая вероятность одобрения ипотеки достигается даже в
+                      сложных случаях, благодаря тесной коммуникации с банками и
+                      отличным знаниям всех требований.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal_advantages_block">
+                <h4 class="modal_h4">
+                  Препятствия которые мешают одобрить ипотеку самостоятельно
+                </h4>
+                <div class="adv_blocks adv_cross">
+                  <div class="adv_block">
+                    <span>Отсутствие необходимых документов</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Нет гражданства РФ</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Низкий первоначальный взнос</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Нет подтверждения дохода</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Плохая кредитная история</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_questions_block">
+                <div class="questions_text">
+                  <span class="big_blue">
+                    Есть сложности?
+                  </span>
+                  <span class="little_white">
+                    Оставьте свой номер <br />
+                    и мы перезвоним
+                  </span>
+                </div>
+                <div class="form_wrapper">
+                  <form action="mail.php" method="post">
+                    <input
+                      type="text"
+                      placeholder="+7 (999) 999-99-99"
+                      name="phone"
+                      id="form-phone"
+                    />
+                    <input type="button" value="ПЕРЕЗВОНИТЕ МНЕ" />
+                    <div class="button_icon"></div>
+                  </form>
+                  <div class="consult__privacy_term">
+                    <div class="privacy__btn"></div>
+                    <span class="privacy_term">
+                      Я соглашаюсь с условиями в
+                      <a href="#" class="privacy_link"
+                        >политике конфиденциальности</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_withus">
+                <h4 class="modal_h4">
+                  Работая с нами вы платите только за положительный результат
+                </h4>
+                <div class="withus_wrapper">
+                  <div class="block">
+                    <span>
+                      Высокая <br />
+                      вероятность <br />
+                      одобрения
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Гарантия <br />
+                      понижения <br />
+                      ставки
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Помощь в сборе <br />
+                      всех документов
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      90% обращений <br />
+                      заканчиваются <br />
+                      одобрением
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="modal__footer"></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="popup_3" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-1-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Продажа недвижимости
+            </h2>
+            <div
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></div>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <div class="modal_wrapper">
+              <div class="modal_main_block">
+                <div class="photo_block">
+                  <div class="blue_block"></div>
+                  <div class="photo_card">
+                    <div class="photo_card_content">
+                      <img src="../../img/photo.png" alt="Фото" />
+
+                      <span class="name">
+                        Владислав <br />
+                        Жильцов
+                      </span>
+                      <span class="job">
+                        Старший специалист
+                      </span>
+                    </div>
+                    <div class="blue_line"></div>
+                  </div>
+                </div>
+                <div class="text_block">
+                  <p class="text">
+                    Продажа недвижимости – это всегда актуальная задача, которая
+                    возникает в жизни как минимум раз. От того, каким будет
+                    подход к данному процессу, напрямую зависит количество
+                    вырученных денежных средств при реализации объекта, а также
+                    количество потраченного времени и нервов. Профессиональный
+                    подход подразумевает чёткую ориентацию в ценообразовании
+                    выбранного типа недвижимости, эффективное рекламное
+                    продвижение, профессиональное ведение переговоров, знание
+                    гражданского, семейного, жилищного и налогового
+                    законодательств. Обращаясь в МГЦН, вы получаете надёжного
+                    представителя ваших интересов на рынке недвижимости.
+                  </p>
+                  <div class="button_wrapper">
+                    <a href="#" class="button">
+                      Задать вопрос эксперту
+                    </a>
+                    <div class="button_icon"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_number_block">
+                <ul class="number__list">
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_1"></div>
+                    <div class="number_text">
+                      Проведение сделок любой сложности: продажа из-под залога,
+                      ипотека, мена, разъезд, сделки с материнским капиталом,
+                      переуступка прав требования, приватизация, сделки с
+                      сертификатами и субсидиями.
+                    </div>
+                  </li>
+                  <li class="number_list_item">
+                    <div class="number_icon number_icon_2"></div>
+                    <div class="number_text">
+                      Комплексный маркетинговый план с использованием
+                      инновационных решений, таргетированная и контекстная
+                      реклама.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal_advantages_block">
+                <h4 class="modal_h4">
+                    Продажа с «МГЦН»
+                </h4>
+                <div class="adv_blocks adv_like">
+                  <div class="adv_block">
+                    <span>Квартиры на вторичном рынке</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Квартиры в Новостройке</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Загородного дома</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Коммерческого помещения</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Земельного участка</span>
+                  </div>
+                  <div class="adv_block">
+                    <span>Гаража машиноместа</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal_questions_block">
+                <div class="questions_text">
+                  <span class="big_blue">
+                    Есть сложности?
+                  </span>
+                  <span class="little_white">
+                    Оставьте свой номер <br />
+                    и мы перезвоним
+                  </span>
+                </div>
+                <div class="form_wrapper">
+                  <form action="mail.php" method="post">
+                    <input
+                      type="text"
+                      placeholder="+7 (999) 999-99-99"
+                      name="phone"
+                      id="form-phone"
+                    />
+                    <input type="button" value="ПЕРЕЗВОНИТЕ МНЕ" />
+                    <div class="button_icon"></div>
+                  </form>
+                  <div class="consult__privacy_term">
+                    <div class="privacy__btn"></div>
+                    <span class="privacy_term">
+                      Я соглашаюсь с условиями в
+                      <a href="#" class="privacy_link"
+                        >политике конфиденциальности</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal_withus">
+                <h4 class="modal_h4">
+                  Работая с нами вы платите только за положительный результат
+                </h4>
+                <div class="withus_wrapper">
+                  <div class="block">
+                    <span>
+                      Гарантия <br />
+                      юридической <br />
+                      чистоты
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Безопасность <br />
+                      взаиморасчётов
+                    </span>
+                  </div>
+                  <div class="block">
+                    <span>
+                      Взаимодействие <br />
+                      с регистрирующими <br />
+                      органами <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="modal__footer"></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal micromodal-slide" id="main_popup" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <main class="modal__content" id="modal-1-content">
+              <div class="modal_wrapper">
+                <div
+                  class="modal__close"
+                  aria-label="Close modal"
+                  data-micromodal-close
+                ></div>
+                  <div class="white_block__wrapper">
+                      <div class="consult__girl"></div>
+                      <h4 class="h4">
+                          <span>
+                            Оставьте ваш номер телефона
+                          </span><br />
+                          и мы вам перезвоним
+                      </h4>
+                      <form action="mail.php" method="post">
+                        <input
+                          type="text"
+                          placeholder="Александр Владимирович"
+                          name="name"
+                          id="form-name"
+                        />
+                        <input
+                          type="text"
+                          placeholder="+7 (999) 999-99-99"
+                          name="phone"
+                          id="form-phone"
+                        />
+                        <input type="button" value="ПЕРЕЗВОНИТЕ МНЕ" />
+                        <div class="button_icon"></div>
+                      </form>
+                      <div class="consult__privacy_term">
+                        <div class="privacy__btn"></div>
+                        <span class="privacy_term">
+                          Я соглашаюсь с условиями в
+                          <a href="#" class="privacy_link"
+                            >политике конфиденциальности</a
+                          >
+                        </span>
+                      </div>
+                    </div>
+              </div>
+            </main>
+            <footer class="modal__footer"></footer>
+          </div>
+        </div>
+      </div>
+  
 
     <script src="js/bundle.js"></script>
   </body>
